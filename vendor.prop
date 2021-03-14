@@ -15,8 +15,8 @@ ro.surface_flinger.has_wide_color_display=true
 vendor.display.enable_default_color_mode=1
 
 # Fingerprint
-persist.vendor.sys.fp.fod.location.X_Y=445,1910
-persist.vendor.sys.fp.fod.size.width_height=190,190
+persist.vendor.sys.fp.fod.location.X_Y=448,1938
+persist.vendor.sys.fp.fod.size.width_height=185,185
 ro.hardware.fp.fod=true
 
 # Graphics
@@ -24,8 +24,11 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
 # Listen
-ro.vendor.audio.soundtrigger=xiaomi
-ro.vendor.audio.soundtrigger.lowpower=false
+vendor.audio.soundtrigger.phrase.adsp.level=40
+vendor.audio.soundtrigger.phrase.level=40
+vendor.audio.soundtrigger.training.level=50
+vendor.audio.soundtrigger.user.adsp.level=60
+vendor.audio.soundtrigger.user.level=60
 
 # NFC
 ro.hardware.nfc_nci=nqx.default
