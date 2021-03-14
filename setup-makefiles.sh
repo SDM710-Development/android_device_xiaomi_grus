@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=pyxis
+export DEVICE=grus
 export DEVICE_COMMON=sdm710-common
 export VENDOR=xiaomi
 

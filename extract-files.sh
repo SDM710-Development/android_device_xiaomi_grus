@@ -14,8 +14,8 @@ fi
 
 set -e
 
-export DEVICE=pyxis
+export DEVICE=grus
 export DEVICE_COMMON=sdm710-common
 export VENDOR=xiaomi
 
-"../../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
+"./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

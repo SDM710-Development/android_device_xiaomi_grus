@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/pyxis/pyxis-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/grus/grus-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -83,13 +83,7 @@ PRODUCT_COPY_FILES += \
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
-    $(LOCAL_PATH)/idc/uinput-goodix.idc:system/usr/idc/uinput-goodix.idc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
-    $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # IR
 PRODUCT_PACKAGES += \
