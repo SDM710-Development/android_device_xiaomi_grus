@@ -276,6 +276,25 @@ vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
 vendor/lib/camera/titan17x_usecases.bin
 
+# DRM (MTD)
+vendor/bin/mtd@1.2
+vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
+vendor/lib64/libmfido.so
+vendor/lib64/libmt@1.2.so
+vendor/lib64/libwvkeybox.so
+vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
+
+# DRM (Widevine)
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/liboemcrypto.so
+vendor/lib64/libwvhidl.so
+vendor/lib64/mediadrm/libwvdrmengine.so
+
 # Display calibration
 vendor/etc/dsi_ss_ea8076_fhd_cmd_display_mi.xml
 
