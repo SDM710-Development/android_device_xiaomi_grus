@@ -30,6 +30,9 @@
 on init
     write /sys/class/leds/ir/max_brightness 63
 
+on init && property:ro.boot.hwc=GLOBAL
+    setprop ro.boot.product.hardware.sku grus_global
+
 on post-fs-data
     mkdir /data/vendor/hbtp 0750 system system
     mkdir /data/vendor/nfc 0770 nfc nfc
