@@ -1,4 +1,4 @@
-# Device proprietary files - from grus's MIUI package V12.0.3.0.QFBMIXM global stable version
+# Device proprietary files - from grus's MIUI package V12.0.4.0.QFBEUXM EEA stable version
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
