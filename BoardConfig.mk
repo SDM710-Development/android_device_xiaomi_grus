@@ -41,9 +41,14 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_grus
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
+BOARD_METADATAIMAGE_PARTITION_SIZE := 1073741824
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
+# Creates metadata partition mount point under root for
+# the devices with metadata parition
+BOARD_USES_METADATA_PARTITION := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -55,6 +60,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Verified Boot
 BOARD_AVB_ENABLE := false
 BOARD_BUILD_DISABLED_VBMETAIMAGE := true
+
+# SEPolicy
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/grus/BoardConfigVendor.mk
