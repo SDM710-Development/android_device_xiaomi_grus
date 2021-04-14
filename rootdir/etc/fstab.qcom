@@ -21,4 +21,4 @@
 
 /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.*.auto*    /storage/usbotg    vfat    nosuid,nodev    wait,voldmanaged=usbotg:auto
 
-/dev/block/zram0                             none                    swap    defaults                                                                                          zramsize=2684354560,max_comp_streams=8,zram_backingdev_size=512M
+/dev/block/zram0                             none                    swap    defaults                                                                                          zramsize=50%,zram_backingdev_size=512M
