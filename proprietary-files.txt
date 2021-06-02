@@ -308,7 +308,7 @@ vendor/firmware/libpn553_rec.so
 vendor/lib/libpn553_fw.so
 
 # QDCM calibration data
-vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml
+vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml|2e4e25256396faf7a9060ffe203e94c04c5f8cd0
 
 # Secure element
 vendor/bin/hw/vendor.qti.secure_element@1.0-service
