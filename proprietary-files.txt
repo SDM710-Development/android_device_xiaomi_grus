@@ -78,28 +78,8 @@ vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
 vendor/etc/cirrus.cfg
 
 # Camera
-vendor/bin/remosaic_daemon
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
-vendor/lib/libalCFR.so
-vendor/lib/libalhLDC.so
-vendor/lib/libalLDC.so
-vendor/lib/libalRnBRT_GL_GBWRAPPER.so
-vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_bodyslim.so
-vendor/lib/libarcsoft_distortion_correction.so
-vendor/lib/libarcsoft_dualcam_image_optical_zoom.so
-vendor/lib/libarcsoft_dualcam_optical_zoom_control.so
-vendor/lib/libarcsoft_dualcam_refocus.so
-vendor/lib/libarcsoft_dualcam_refocus_front.so
-vendor/lib/libarcsoft_dualcam_refocus_rear_t.so
-vendor/lib/libarcsoft_dualcam_refocus_rear_w.so
-vendor/lib/libarcsoft_dualcam_video_optical_zoom.so
-vendor/lib/libarcsoft_high_dynamic_range.so
-vendor/lib/libarcsoft_low_light_hdr.so
-vendor/lib/libarcsoft_portrait_lighting.so
-vendor/lib/libarcsoft_portrait_lighting_c.so
-vendor/lib/libarcsoft_supernight.so
 vendor/lib/libc++_shared.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libcamera_scene.so
@@ -118,8 +98,6 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmpbase.so
 vendor/lib/libnanopb.so
-vendor/lib/libremosaic_daemon.so
-vendor/lib/libremosaiclib.so
 vendor/lib/libSNPE.so
 vendor/lib/libswregistrationalgo.so
 vendor/lib/libsymphony-cpu.so
@@ -129,37 +107,29 @@ vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/libvidhance.so
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/lib_denoiser3.so
-vendor/lib/mibokeh_712_opencl.bin
-vendor/lib64/libalCFR.so
-vendor/lib64/libalhLDC.so
-vendor/lib64/libarcsoft_beautyshot.so
-vendor/lib64/libarcsoft_bodyslim.so
-vendor/lib64/libarcsoft_distortion_correction.so
-vendor/lib64/libarcsoft_dualcam_refocus.so
-vendor/lib64/libarcsoft_dualcam_refocus_front.so
-vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so
-vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so
-vendor/lib64/libarcsoft_high_dynamic_range.so
-vendor/lib64/libarcsoft_low_light_hdr.so
-vendor/lib64/libarcsoft_portrait_lighting.so
-vendor/lib64/libarcsoft_portrait_lighting_c.so
-vendor/lib64/libarcsoft_supernight.so
-vendor/lib64/libcamera_nn_stub.so
-vendor/lib64/libcamxfdalgov7.so
-vendor/lib64/libmialgoengine.so
-vendor/lib64/libmialgo_fs.so
-vendor/lib64/libmibokeh_712.so
-vendor/lib64/libmmcamera_faceproc.so
-vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib64/libmpbase.so
-vendor/lib64/libnanopb.so
-vendor/lib64/libremosaic_daemon.so
-vendor/lib64/libremosaiclib.so
-vendor/lib64/libswregistrationalgo.so
-vendor/lib64/libVDClearShot.so
-vendor/lib64/libVDDualCameraClearShot.so
-vendor/lib64/libVDSuperPhotoAPI.so
-vendor/lib64/libvidhance.so
+
+# Camera (Altek modules)
+vendor/lib/libalCFR.so
+vendor/lib/libalhLDC.so
+vendor/lib/libalLDC.so
+vendor/lib/libalRnBRT_GL_GBWRAPPER.so
+
+# Camera (Arcsoft modules)
+vendor/lib/libarcsoft_beautyshot.so
+vendor/lib/libarcsoft_bodyslim.so
+vendor/lib/libarcsoft_distortion_correction.so
+vendor/lib/libarcsoft_dualcam_image_optical_zoom.so
+vendor/lib/libarcsoft_dualcam_optical_zoom_control.so
+vendor/lib/libarcsoft_dualcam_refocus.so
+vendor/lib/libarcsoft_dualcam_refocus_front.so
+vendor/lib/libarcsoft_dualcam_refocus_rear_t.so
+vendor/lib/libarcsoft_dualcam_refocus_rear_w.so
+vendor/lib/libarcsoft_dualcam_video_optical_zoom.so
+vendor/lib/libarcsoft_high_dynamic_range.so
+vendor/lib/libarcsoft_low_light_hdr.so
+vendor/lib/libarcsoft_portrait_lighting.so
+vendor/lib/libarcsoft_portrait_lighting_c.so
+vendor/lib/libarcsoft_supernight.so
 
 # Camera (components)
 vendor/lib/camera/components/com.altek.node.depurple.so
@@ -237,6 +207,13 @@ vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/visidon_clearshot_params_algoup.xml
 
+# Camera (Remosaic)
+vendor/bin/remosaic_daemon
+vendor/lib/libremosaic_daemon.so
+vendor/lib/libremosaiclib.so
+vendor/lib64/libremosaic_daemon.so
+vendor/lib64/libremosaiclib.so
+
 # Camera (sensors)
 vendor/lib/camera/com.qti.sensor.imx586_grus.so
 vendor/lib/camera/com.qti.sensor.ov8856.so
@@ -267,6 +244,17 @@ vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
 vendor/lib/camera/titan17x_usecases.bin
+vendor/lib/mibokeh_712_opencl.bin
+
+# Display calibration
+vendor/etc/dsi_ss_ea8076_fhd_cmd_display_mi.xml
+
+# Display configs
+vendor/etc/hdr_config.cfg
+vendor/etc/sdr_config.cfg
+
+# Display firmware
+vendor/firmware/goodix_gt9886_limit_f2.tporder
 
 # DRM (MTD)
 vendor/bin/mtd@1.2
@@ -287,22 +275,6 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
-
-# Display calibration
-vendor/etc/dsi_ss_ea8076_fhd_cmd_display_mi.xml
-
-# Display configs
-vendor/etc/hdr_config.cfg
-vendor/etc/sdr_config.cfg
-
-# Display firmware
-vendor/firmware/goodix_gt9886_limit_f2.tporder
-
-# DRM
-vendor/lib64/libhdcpsrm.so
-vendor/lib64/liboemcrypto.so
-vendor/lib/libhdcpsrm.so
-vendor/lib/liboemcrypto.so
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.sdm710.so
