@@ -270,7 +270,7 @@ vendor/lib/camera/titan17x_usecases.bin
 
 # DRM (MTD)
 vendor/bin/mtd@1.2
-vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc|2f702dc8c26b2a7a7fd732b8a0a42c643d8b6775
+vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
 vendor/lib64/libmfido.so
 vendor/lib64/libmt@1.2.so
 vendor/lib64/libwvkeybox.so
