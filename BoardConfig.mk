@@ -24,6 +24,10 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Fingerprint on display
+TARGET_SURFACEFLINGER_FOD_LIB := //device/xiaomi/sdm710-common:libfod_extension.xiaomi_sdm710
+TARGET_USES_FOD_ZPOS := true
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
