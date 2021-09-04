@@ -68,11 +68,6 @@ service adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
     user system
     group system
 
-service cdsprpcd /vendor/bin/cdsprpcd
-    class main
-    user system
-    group system
-
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
     class main
     user root
