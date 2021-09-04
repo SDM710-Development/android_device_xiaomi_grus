@@ -42,9 +42,5 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
-# Verified Boot
-BOARD_AVB_ENABLE := false
-BOARD_BUILD_DISABLED_VBMETAIMAGE := true
-
 # Inherit from the proprietary version
 -include vendor/xiaomi/grus/BoardConfigVendor.mk
