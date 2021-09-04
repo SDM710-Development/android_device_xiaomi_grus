@@ -50,14 +50,6 @@ on boot
     chown system system /sys/kernel/hbtp/display_pwr
     chown system system /sys/class/touch/tp_dev/fod_status
 
-    # Create hvdcp_opti directory
-    mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
-
-service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
-    class main
-    user root
-    group system wakelock
-
 service remosaic_daemon /vendor/bin/remosaic_daemon
     class late_start
     user camera
