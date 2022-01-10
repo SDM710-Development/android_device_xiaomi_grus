@@ -9,10 +9,10 @@
 
 BUILD_BROKEN_DUP_RULES := true
 
-DEVICE_PATH := device/xiaomi/pyxis
+DEVICE_PATH := device/xiaomi/grus
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := pyxis
+TARGET_OTA_ASSERT_DEVICE := grus
 
 # Display
 TARGET_SCREEN_DENSITY := 440
@@ -21,7 +21,7 @@ TARGET_SCREEN_DENSITY := 440
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := pyxis_defconfig
+TARGET_KERNEL_CONFIG := grus_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
@@ -38,4 +38,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Inherit from the proprietary version
--include vendor/xiaomi/pyxis/BoardConfigVendor.mk
+-include vendor/xiaomi/grus/BoardConfigVendor.mk
