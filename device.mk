@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+BOARD_SHIPPING_API_LEVEL := 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Enable updating of APEXes
