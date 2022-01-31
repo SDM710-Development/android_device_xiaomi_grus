@@ -8,8 +8,8 @@ vendor.voice.path.for.pcm.voip=false
 ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Fingerprint
-persist.vendor.sys.fp.fod.location.X_Y=445,1910
-persist.vendor.sys.fp.fod.size.width_height=190,190
+persist.vendor.sys.fp.fod.location.X_Y=448,1938
+persist.vendor.sys.fp.fod.size.width_height=184,185
 ro.hardware.fp.fod=true
 
 # Listen
