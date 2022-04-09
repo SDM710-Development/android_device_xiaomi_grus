@@ -11,6 +11,7 @@ $(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 28
+PRODUCT_COMPRESSED_APEX := false
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
