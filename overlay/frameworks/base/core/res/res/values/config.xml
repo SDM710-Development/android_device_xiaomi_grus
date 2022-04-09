@@ -158,4 +158,14 @@
 
     <!-- Shows the required view for in-display fingerprint -->
     <bool name="config_supportsInDisplayFingerprint">true</bool>
+
+    <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
+    <integer name="config_udfps_illumination_transition_ms">0</integer>
+
+    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+    <integer-array name="config_udfps_sensor_props" translatable="false" >
+        <item>540</item>  <!-- sensorLocationX -->
+        <item>2030</item> <!-- sensorLocationY -->
+        <item>92</item>   <!-- sensorRadius -->
+    </integer-array>
 </resources>
